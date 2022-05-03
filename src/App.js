@@ -7,7 +7,7 @@ import ItemCount from './components/ItemCount';
 export default function App() {
   return (
     <>
-      <ItemListContainer />
+      <ItemListContainer/>
     </>
   );
 }
