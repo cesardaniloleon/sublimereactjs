@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
+import Saludo from './components/Saludo';
 import ItemListContainer from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
 import ItemList from './components/ItemList';
@@ -13,10 +14,9 @@ export default function App() {
      <BrowserRouter>
         <NavBar></NavBar>
         <Routes>
-          <Route path='/' element={<ItemListContainer></ItemListContainer>}></Route>
-          <Route path='/contador'element={<ItemCount></ItemCount>} ></Route>
-          <Route></Route>
-          <Route></Route>
+          <Route path='/' element={<ItemListContainer/>}></Route>
+          <Route path='/contador'element={<ItemCount/>} ></Route>
+          <Route path='/saludo' element={<Saludo/>} ></Route>
         </Routes>
           <center>
               <ItemList>
